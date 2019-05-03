@@ -25,16 +25,14 @@ Here are links to the [blog](https://pagertree.com/2017/12/01/prometheus-tutoria
 
 # Pre-requisites
 
-This tutorial assumes you are running on a Ubuntu 16.04 server. I like using [this](https://www.digitalocean.com/products/one-click-apps/docker/) Digital Ocean image. You can also use your own service provider.
-
+This tutorial assumes you are running on a Ubuntu 16.04/18.04 server. 
 Once you have your Ubuntu node ready, go to the [Installation & Configuration](#installation--configuration) section below.
 
 
 # Installation & Configuration
 For a one click install experience run the following command:
 ```curl
-cd monitor_system
-./install.sh -H 'Cache-Control: no-cache' | sudo sh
+curl https://raw.githubusercontent.com/dremerten/monitor_system/master/monitor_system/install.sh -H 'Cache-Control: no-cache' | sudo sh
 ```
 
 At this point you'll have automagically deployed the entire Grafana and Prometheus stack. You can now access the Grafana dashboard at `http://<Host IP Address>:3000` *Username: `admin`, Password: `9uT46ZKE`*. *Note: before the dashboards will work you need to follow the [Datasource Configuration section](#datasource-configuration).*
