@@ -27,14 +27,16 @@ Here are links to the [blog](https://pagertree.com/2017/12/01/prometheus-tutoria
 
 This tutorial assumes you are running on a Ubuntu 16.04/18.04 server. 
 Once you have your Ubuntu node ready, go to the [Installation & Configuration](#installation--configuration) section below.
-
+```
+cd monitor_system
 cd ./util
 sudo chmod +x ./util/*.sh
 sudo chmod +x install.sh
+```
 # Installation & Configuration
 For a one click install experience run the following command:
 ```
-cd monitor_system/monitor_system
+cd monitor_system
 sudo ./install.sh
 ```
 
